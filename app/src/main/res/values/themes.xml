@@ -1,9 +1,22 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.JeopardyGameControllerAndroid" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Theme.JeopardyGameControllerAndroid" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@android:color/holo_blue_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+
+        <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.JeopardyGameControllerAndroid" parent="Base.Theme.JeopardyGameControllerAndroid" />
+    <style name="Theme.JeopardyGameControllerAndroid.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.JeopardyGameControllerAndroid.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.JeopardyGameControllerAndroid.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
