@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 class ImportBoardViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is slideshow Fragment"
+        value = "This is the Import Board Fragment"
     }
     val text: LiveData<String> = _text
 }
