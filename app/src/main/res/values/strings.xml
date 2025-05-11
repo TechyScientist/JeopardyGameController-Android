@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">JeopardyGameController-Android</string>
+    <string name="app_name">JeopardyController</string>
+    <string name="nav_header_title">Jeopardy Game Controller</string>
+
+    <string name="menu_board">Board</string>
+    <string name="menu_setup">Board Setup</string>
+    <string name="menu_import">Import Board</string>
+    <string name="menu_export">Export Board</string>
 </resources>
