@@ -1,9 +1,26 @@
 <resources>
+    <!-- App Display Name -->
     <string name="app_name">Jeopardy Controller</string>
-    <string name="nav_header_title">Jeopardy Game Controller</string>
 
+    <!-- Navigation Bar -->
+    <string name="nav_header_title">Jeopardy Game Controller</string>
     <string name="menu_board">Board</string>
     <string name="menu_setup">Board Setup</string>
     <string name="menu_import">Import Board</string>
     <string name="menu_export">Export Board</string>
+
+    <!-- Board Setup Fragment -->
+    <string name="round">Round:</string>
+    <string name="round1">Single</string>
+    <string name="round2">Double</string>
+    <string name="round3">Final</string>
+    <string name="categories">Round Categories:</string>
+    <string name="final_category">Final Jeopardy Category:</string>
+    <string name="final_answer">Final Jeopardy Answer:</string>
+    <string name="category">Category %1$d Title</string>
+    <string name="answer">Answer</string>
+    <string name="configure_categories">Configure Board Questions…</string>
+    <string name="save_round_config">Save Round Configuration</string>
+    <string name="save_final_config">Save Final Jeopardy Configuration</string>
+
 </resources>
