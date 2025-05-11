@@ -7,25 +7,25 @@
 
     <fragment
         android:id="@+id/nav_board"
-        android:name="com.johnnyconsole.android.jeopardycontroller.ui.board.BoardFragment"
+        android:name="com.johnnyconsole.android.jeopardygamecontroller_android.ui.board.BoardFragment"
         android:label="@string/menu_board"
         tools:layout="@layout/fragment_board" />
 
     <fragment
         android:id="@+id/nav_setup"
-        android:name="com.johnnyconsole.android.jeopardycontroller.ui.setup.SetupFragment"
+        android:name="com.johnnyconsole.android.jeopardygamecontroller_android.ui.setup.SetupFragment"
         android:label="@string/menu_setup"
         tools:layout="@layout/fragment_setup" />
 
     <fragment
         android:id="@+id/nav_import"
-        android:name="com.johnnyconsole.android.jeopardycontroller.ui.import_board.ImportBoardFragment"
+        android:name="com.johnnyconsole.android.jeopardygamecontroller_android.ui.import_board.ImportBoardFragment"
         android:label="@string/menu_import"
         tools:layout="@layout/fragment_import" />
 
     <fragment
         android:id="@+id/nav_export"
-        android:name="com.johnnyconsole.android.jeopardycontroller.ui.export_board.ExportBoardFragment"
+        android:name="com.johnnyconsole.android.jeopardygamecontroller_android.ui.export_board.ExportBoardFragment"
         android:label="@string/menu_export"
         tools:layout="@layout/fragment_export" />
 </navigation>
