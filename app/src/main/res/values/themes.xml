@@ -9,6 +9,7 @@
         <item name="android:statusBarColor">?attr/colorPrimary</item>
 
         <!-- Customize your theme here. -->
+        <item name="colorAccent">?attr/colorPrimary</item>
     </style>
 
     <style name="Theme.JeopardyGameControllerAndroid.NoActionBar">
