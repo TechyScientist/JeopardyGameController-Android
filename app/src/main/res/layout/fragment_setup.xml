@@ -1,214 +1,221 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
     tools:context=".ui.setup.SetupFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:id="@+id/llRoundSelect"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/round"
-            android:layout_gravity="center_vertical"
-            android:layout_marginEnd="10dp"/>
+            android:orientation="horizontal"
+            android:id="@+id/llRoundSelect"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <RadioButton
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/rbSingleJeopardy"
-                android:text="@string/round1"
-                android:checked="true"
+                android:text="@string/round"
+                android:layout_gravity="center_vertical"
                 android:layout_marginEnd="10dp"/>
 
-            <RadioButton
+            <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/rbDoubleJeopardy"
-                android:text="@string/round2"
-                android:layout_marginEnd="10dp"/>
+                android:orientation="horizontal">
 
-            <RadioButton
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbSingleJeopardy"
+                    android:text="@string/round1"
+                    android:checked="true"
+                    android:layout_marginEnd="10dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbDoubleJeopardy"
+                    android:text="@string/round2"
+                    android:layout_marginEnd="10dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbFinalJeopardy"
+                    android:text="@string/round3"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/llCategories"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llRoundSelect"
+            tools:ignore="labelFor">
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/rbFinalJeopardy"
-                android:text="@string/round3"/>
+                android:text="@string/categories"
+                android:layout_marginBottom="20dp"/>
 
-        </RadioGroup>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/etRoundCategory1"
+                android:inputType="text"
+                android:ems="15"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:importantForAccessibility="no"
+                android:autofillHints="none"/>
 
-    </LinearLayout>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/etRoundCategory2"
+                android:inputType="text"
+                android:ems="15"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:importantForAccessibility="no"
+                android:autofillHints="none"/>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/llCategories"
-        android:layout_marginTop="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/llRoundSelect"
-        tools:ignore="labelFor">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/etRoundCategory3"
+                android:inputType="text"
+                android:ems="15"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:importantForAccessibility="no"
+                android:autofillHints="none"/>
 
-        <TextView
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/etRoundCategory4"
+                android:inputType="text"
+                android:ems="15"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:importantForAccessibility="no"
+                android:autofillHints="none"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/etRoundCategory5"
+                android:inputType="text"
+                android:ems="15"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:importantForAccessibility="no"
+                android:autofillHints="none"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/etRoundCategory6"
+                android:inputType="text"
+                android:ems="15"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:importantForAccessibility="no"
+                android:autofillHints="none"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btConfigureQuestions"
+                android:text="@string/configure_categories"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btSaveRoundConfig"
+                android:text="@string/save_round_config"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/categories"
-            android:layout_marginBottom="20dp"/>
+            android:orientation="vertical"
+            android:id="@+id/llFinalJeopardy"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llRoundSelect">
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:id="@+id/etRoundCategory1"
-            android:inputType="text"
-            android:ems="15"
-            android:layout_marginBottom="10dp"
-            android:layout_marginStart="20dp"
-            android:importantForAccessibility="no"
-            android:autofillHints="none"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/final_category"
+                android:layout_marginBottom="20dp"/>
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:id="@+id/etRoundCategory2"
-            android:inputType="text"
-            android:ems="15"
-            android:layout_marginBottom="10dp"
-            android:layout_marginStart="20dp"
-            android:importantForAccessibility="no"
-            android:autofillHints="none"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/etFinalJeopardyCategory"
+                android:inputType="text"
+                android:ems="15"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:importantForAccessibility="no"
+                android:autofillHints="none"
+                tools:ignore="labelFor"/>
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:id="@+id/etRoundCategory3"
-            android:inputType="text"
-            android:ems="15"
-            android:layout_marginBottom="10dp"
-            android:layout_marginStart="20dp"
-            android:importantForAccessibility="no"
-            android:autofillHints="none"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/final_answer"
+                android:layout_marginBottom="20dp"/>
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:id="@+id/etRoundCategory4"
-            android:inputType="text"
-            android:ems="15"
-            android:layout_marginBottom="10dp"
-            android:layout_marginStart="20dp"
-            android:importantForAccessibility="no"
-            android:autofillHints="none"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/etFinalJeopardyAnswer"
+                android:inputType="text"
+                android:ems="15"
+                android:hint="@string/answer"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:importantForAccessibility="no"
+                android:autofillHints="none"/>
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:id="@+id/etRoundCategory5"
-            android:inputType="text"
-            android:ems="15"
-            android:layout_marginBottom="10dp"
-            android:layout_marginStart="20dp"
-            android:importantForAccessibility="no"
-            android:autofillHints="none"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btSaveFinalJeopardyConfig"
+                android:text="@string/save_final_config"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"/>
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:id="@+id/etRoundCategory6"
-            android:inputType="text"
-            android:ems="15"
-            android:layout_marginBottom="10dp"
-            android:layout_marginStart="20dp"
-            android:importantForAccessibility="no"
-            android:autofillHints="none"/>
+        </LinearLayout>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btConfigureQuestions"
-            android:text="@string/configure_categories"
-            android:textAllCaps="false"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center_horizontal"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btSaveRoundConfig"
-            android:text="@string/save_round_config"
-            android:textAllCaps="false"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center_horizontal"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/llFinalJeopardy"
-        android:layout_marginTop="10dp"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/llRoundSelect">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/final_category"
-            android:layout_marginBottom="20dp"/>
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:id="@+id/etFinalJeopardyCategory"
-            android:inputType="text"
-            android:ems="15"
-            android:layout_marginBottom="10dp"
-            android:layout_marginStart="20dp"
-            android:importantForAccessibility="no"
-            android:autofillHints="none"
-            tools:ignore="labelFor"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/final_answer"
-            android:layout_marginBottom="20dp"/>
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:id="@+id/etFinalJeopardyAnswer"
-            android:inputType="text"
-            android:ems="15"
-            android:hint="@string/answer"
-            android:layout_marginBottom="10dp"
-            android:layout_marginStart="20dp"
-            android:importantForAccessibility="no"
-            android:autofillHints="none"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btSaveFinalJeopardyConfig"
-            android:text="@string/save_final_config"
-            android:textAllCaps="false"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center_horizontal"/>
-
-    </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
