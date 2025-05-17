@@ -73,71 +73,77 @@
                 android:text="@string/categories"
                 android:layout_marginBottom="20dp"/>
 
-            <EditText
+            <GridLayout
                 android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:id="@+id/etRoundCategory1"
-                android:inputType="text"
-                android:ems="15"
-                android:layout_marginBottom="10dp"
-                android:layout_marginStart="20dp"
-                android:importantForAccessibility="no"
-                android:autofillHints="none"/>
+                android:layout_height="wrap_content"
+                android:columnCount="2">
 
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:id="@+id/etRoundCategory2"
-                android:inputType="text"
-                android:ems="15"
-                android:layout_marginBottom="10dp"
-                android:layout_marginStart="20dp"
-                android:importantForAccessibility="no"
-                android:autofillHints="none"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:id="@+id/etRoundCategory1"
+                    android:inputType="text"
+                    android:ems="15"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="20dp"
+                    android:importantForAccessibility="no"
+                    android:autofillHints="none"/>
 
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:id="@+id/etRoundCategory3"
-                android:inputType="text"
-                android:ems="15"
-                android:layout_marginBottom="10dp"
-                android:layout_marginStart="20dp"
-                android:importantForAccessibility="no"
-                android:autofillHints="none"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:id="@+id/etRoundCategory2"
+                    android:inputType="text"
+                    android:ems="15"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="20dp"
+                    android:importantForAccessibility="no"
+                    android:autofillHints="none"/>
 
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:id="@+id/etRoundCategory4"
-                android:inputType="text"
-                android:ems="15"
-                android:layout_marginBottom="10dp"
-                android:layout_marginStart="20dp"
-                android:importantForAccessibility="no"
-                android:autofillHints="none"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:id="@+id/etRoundCategory3"
+                    android:inputType="text"
+                    android:ems="15"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="20dp"
+                    android:importantForAccessibility="no"
+                    android:autofillHints="none"/>
 
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:id="@+id/etRoundCategory5"
-                android:inputType="text"
-                android:ems="15"
-                android:layout_marginBottom="10dp"
-                android:layout_marginStart="20dp"
-                android:importantForAccessibility="no"
-                android:autofillHints="none"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:id="@+id/etRoundCategory4"
+                    android:inputType="text"
+                    android:ems="15"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="20dp"
+                    android:importantForAccessibility="no"
+                    android:autofillHints="none"/>
 
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:id="@+id/etRoundCategory6"
-                android:inputType="text"
-                android:ems="15"
-                android:layout_marginBottom="10dp"
-                android:layout_marginStart="20dp"
-                android:importantForAccessibility="no"
-                android:autofillHints="none"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:id="@+id/etRoundCategory5"
+                    android:inputType="text"
+                    android:ems="15"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="20dp"
+                    android:importantForAccessibility="no"
+                    android:autofillHints="none"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:id="@+id/etRoundCategory6"
+                    android:inputType="text"
+                    android:ems="15"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="20dp"
+                    android:importantForAccessibility="no"
+                    android:autofillHints="none"/>
+            </GridLayout>
 
             <Button
                 android:layout_width="wrap_content"
