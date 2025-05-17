@@ -8,6 +8,7 @@
     <string name="menu_setup">Board Setup</string>
     <string name="menu_import">Import Board</string>
     <string name="menu_export">Export Board</string>
+    <string name="menu_send">Send to Board…</string>
 
     <!-- Board Setup Fragment -->
     <string name="round">Round:</string>
